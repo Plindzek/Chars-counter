@@ -4,10 +4,9 @@ public class Main {
     
     public static void main(String[] args) {
 	
-	String string = "asksadnfskvbcxkvbslk";
+	String string = "bbbbbaaabbc";
 	
-	CharsCounter counter = new CharsCounter();
-	counter.countChars(string);
+	new CharsCounter().countChars(string);
     }
 
 }
