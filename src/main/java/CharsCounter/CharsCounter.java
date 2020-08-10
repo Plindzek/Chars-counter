@@ -1,9 +1,27 @@
 package CharsCounter;
 
+import java.util.AbstractList;
 import java.util.Arrays;
+import java.util.List;
 
 class CharsCounter {
 
+    public List<Character> countBetterChars(String str){
+
+            return new AbstractList<Character>() {
+
+                @Override
+                public Character get(int index) {
+                    return str.charAt(index);
+                }
+
+                @Override
+                public int size() {
+                    return str.length();
+                }
+            };
+        }
+    }
     void countChars(String str) {
         char[] chars = new char[str.length()];
         str.getChars(0, str.length(), chars, 0);
