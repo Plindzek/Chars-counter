@@ -21,7 +21,7 @@ class CharsCounter {
                 }
             };
         }
-    }
+
     void countChars(String str) {
         char[] chars = new char[str.length()];
         str.getChars(0, str.length(), chars, 0);
